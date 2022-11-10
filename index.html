@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/d3@6.2.0/dist/d3.min.js"></script>
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        /* overflow: hidden; */
+        font-family: sans-serif;
+        display: flex;
+      }
+      li {
+        list-style: none;
+        margin: 1em;
+        text-align: center;
+        cursor: pointer;
+        border: solid black;
+        background-color: cadetblue;
+        border-radius: 0.5em;
+        padding: 5px;
+      }
+      li:hover {
+        background-color: crimson;
+      }
+      /* .node {
+        fill: black;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <ul id="CompList">
+        <li class="all">ALL</li>
+      </ul>
+    </div>
+    <svg id="container" width="500" height="300" ></svg>
+  </body>
+</html>
